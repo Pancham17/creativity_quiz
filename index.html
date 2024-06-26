@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>My Project</title>
+    <style>
+        body{
+            background-color: #FEFFD2;
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 2rem;padding: 18px;
+        }
+        h1{
+            color: #FF7D29;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: <500>;
+            font-style: italic;
+            
+        }
+        p{
+            color: #FFBF78;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .gg{
+            text-align: center;
+
+        }
+
+        #img{
+            border: solid #FFBF78;border: px;
+            height: 300px; width: 400px; 
+
+        }
+        div{
+            text-align: center;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        input[type="text"],
+        input[type="submit"],
+        input[type="reset"],
+        select,
+        textarea{
+            width: 50%;padding: 10px;
+        }
+
+
+
+
+
+
+
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gg">
+    <h1>What's Your Creative Superpower?</h1>
+    <p>Let's know more about the creativity hidden in you</p>
+    </div>
+
+    <div>
+    <img id="img" src="./images/laura-adai-YlR_JL8mMio-unsplash.jpg">
+    </div>
+
+    <form action="backend.php" method="get">
+        <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Spongebob" required>
+        </div>
+
+        
+
+        <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Squarepants" required>
+        </div><br>
+
+        <div>
+            <label for="title">When do you feel the most creative?</label><br>
+            <label for="Morning">Morning</label>
+            <input type="radio" name="title">
+            <label for="Evening">Evening</label>
+            <input type="radio" name="title">
+            <label for="Afternoon">Afternoon</label>
+            <input type="radio" name="title">
+        </div><br>
+        
+        <div>
+            <label for="envt">What's your preferred environment for creative work?</label><br>
+            <label for="Nature">Nature</label>
+            <input type="radio" name="envt">
+            <label for="Busy Cafe">Busy Cafe</label>
+            <input type="radio" name="envt">
+            <label for="Quiet Room">Quiet Room</label>
+            <input type="radio" name="envt">
+
+        </div>
+        <br>
+        <div>
+            <label for="inspo">What's your favourite source of inspiration?</label><br>
+            <label for="Music">Music</label>
+            <input type="checkbox" name="inspo" >
+            <label for="books">Books</label>
+            <input type="checkbox" name="inspo">
+            <label for="Walks">Long Walks</label>
+            <input type="checkbox" name="inspo">
+            <label for="Staring">Staring into the void</label>
+            <input type="checkbox" name="inspo">
+        </div>
+        <br>
+        <div>
+           <label for="idea"> How do you recharge your creativity after completing a big project?</label>
+           <textarea name="mytext" cols="30" rows="2" id="idea"></textarea>
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
